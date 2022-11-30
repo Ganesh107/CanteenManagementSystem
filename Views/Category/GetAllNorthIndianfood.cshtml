@@ -1,0 +1,39 @@
+﻿@model IEnumerable<CanteenManagement.Models.NorthIndian>
+
+<center><h2><strong>NorthIndian Menu</strong></h2></center>
+<br />
+<table class="table table-striped">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.itemname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.price)
+        </th>
+        <th>Action</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.itemname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.price)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "EditNorthfood", new { id = item.id }) |
+                @Html.ActionLink("Delete", "DeleteNorthfood", new { id = item.id })
+            </td>
+        </tr>
+    }
+
+</table>
+<p>
+    @Html.ActionLink("Add item", "AddNorthfood")
+</p>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
