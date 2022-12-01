@@ -17,5 +17,7 @@ namespace CanteenManagement.Models
         public DbSet<Chinese> chinese { get; set; }
         public DbSet<Deserts> deserts { get; set; }
         public DbSet<Beverages> beverages { get; set; }
+        public DbSet<AdminCred> adminCred { get; set; }
+
     }
 }

@@ -10,6 +10,7 @@
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
+            AutomaticMigrationDataLossAllowed=true;
         }
 
         protected override void Seed(CanteenManagement.Models.CanteenContext context)
