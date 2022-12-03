@@ -14,7 +14,7 @@ namespace CanteenManagement.Repository
         {
 			try
 			{
-                var user = canteenContext.adminCred.Where(p => p.Email.Equals(adminCred.Email) && p.Password.Equals(adminCred.Password)).FirstOrDefault();
+                var user = canteenContext.adminCred.Where(p => p.Email.Equals(adminCred.Email) && p.Password.Equals(adminCred.Password)&& p.Status.Equals("Active")).FirstOrDefault();
                 return user;
             }
 			catch (Exception)

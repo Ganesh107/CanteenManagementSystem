@@ -192,6 +192,9 @@
     <Content Include="Views\Category\AddNorthfood.cshtml" />
     <Content Include="Views\Category\EditNorthfood.cshtml" />
     <Content Include="Views\AdminAccess\AdminLogin.cshtml" />
+    <Content Include="Views\AdminAccess\GetAllAdmin.cshtml" />
+    <Content Include="Views\AdminAccess\AddAdmin.cshtml" />
+    <Content Include="Views\AdminAccess\EditAdmin.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
